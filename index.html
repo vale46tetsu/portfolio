@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TetsuWorks | Portfolio</title>
+
+  <!-- 外部 CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================= ヘッダー ================= -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">TetsuWorks</div>
+
+      <!-- グローバルナビゲーション -->
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#timeline">Experience</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- ハンバーガーメニュー -->
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!-- ================= HERO（TOP） ================= -->
+  <section id="home" class="overlay"
+           style="background-image:url('images/hero.jpg')">
+    <div class="overlay-content">
+      <h1><span class="hero-blue">Business × Tech × Passion</span></h1>
+      <p>課題を見抜き、テクノロジーで解決策を描き、結果にコミットする。<br>
+         TetsuWorks はあなたのDXパートナーです。</p>
+    </div>
+  </section>
+
+
+
+  <!-- ================= About ================= -->
+  <section id="about" class="two-col">
+    <div>
+      <h2>About Me</h2>
+      <p>高校で始めた<strong>自転車競技</strong>で培った粘り強さ。<br>
+         地方銀行での<strong>法人営業</strong>で養った課題解決力。<br>
+         現在はIT企業で<strong>システム営業</strong>をしつつ、<br><em>SAMURAI ENGINEER</em>でプログラミング、<br><em>SHIFT AI</em>で生成AIを学習中。<br>
+         Business と Tech を横断し、価値を創造します。</p>
+    </div>
+    <div>
+      <img src="images/about.jpg" alt="Cycling and Coding collage">
+    </div>
+  </section>
+
+
+
+  <!-- ================= Skills（画像＋カード） ================= -->
+  <section id="skills" class="overlay overlay--md"
+           style="background-image:url('images/skills.jpg')">
+    <div class="overlay-content">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="card">
+          <h3>Programming</h3>
+          <p>Python / Java / SQL / <br>アプリケーション開発</p>
+        </div>
+        <div class="card">
+          <h3>AI・Data</h3>
+          <p>OpenAI API, LangChain, データ可視化</p>
+        </div>
+        <div class="card">
+          <h3>Business Consulting</h3>
+          <p>課題ヒアリング・DXロードマップ策定・<br>IT導入支援</p>
+        </div>
+        <div class="card">
+          <h3>Automation Tools</h3>
+          <p>Power Automate / GAS / VBA / GitHub Copilot</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= Timeline ================= -->
+  <section id="timeline" class="two-col">
+    <div>
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>中学時代：</strong>スピードスケート全国大会出場</li>
+        <li><strong>高校時代：</strong>自転車競技 全国大会出場</li>
+        <li><strong>大学時代：</strong>自転車競技全国優勝常連校出身</li>
+        <li><strong>新卒〜：</strong>地方銀行 法人渉外（80社担当）</li>
+        <li><strong>現在：</strong>ITソリューション営業（150社支援）</li>
+        <li><strong>2025–：</strong>SAMURAI ENGINEER 受講</li>
+        <li><strong>2025–：</strong>SHIFT AI 入会</li>
+      </ul>
+    </div>
+    <div>
+      <img src="images/experience.jpg" alt="Experience Image">
+    </div>
+  </section>
+
+
+
+  <!-- ================= Services（画像＋カード） ================= -->
+  <section id="services" class="overlay overlay--md"
+           style="background-image:url('images/services.jpg')">
+    <div class="overlay-content">
+      <h2>Services</h2>
+      <div class="skill-grid">
+        <div class="card">
+          <h3>AI Consulting</h3>
+          <p>生成AI導入支援/<br>プロンプト最適化</p>
+        </div>
+        <div class="card">
+          <h3>Automation Development</h3>
+          <p>業務自動化ツール開発</p>
+        </div>
+        <div class="card">
+          <h3>Web App Development</h3>
+          <p>Java / Python ベースの<br>Webアプリ開発</p>
+        </div>
+        <div class="card">
+          <h3>DX Roadmap</h3>
+          <p>IT導入補助金活用<br>クラウド移行プランニング</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= Works ================= -->
+  <section id="works" class="two-col">
+    <div>
+      <h2>Works</h2>
+      <ul>
+        <li><strong>目標達成サポートアプリ：</strong>Flask × GPT でタスク自動生成</li>
+        <li><strong>ダイエットダッシュボード：</strong>Streamlit で進捗可視化</li>
+        <li><strong>当サイト：</strong>Spring Boot & MySQL ポートフォリオ</li>
+      </ul>
+    </div>
+    <div>
+      <img src="images/projects.jpg" alt="Projects Screenshot">
+    </div>
+  </section>
+
+
+
+  <!-- ================= Contact（画像＋リンク） ================= -->
+  <section id="contact" class="overlay overlay--sm"
+           style="background-image:url('images/contact.jpg')">
+    <div class="overlay-content">
+      <h2>Contact</h2>
+      <p>まずはお気軽にご相談ください！</p>
+      <ul>
+        <li> X (Twitter)：<a href="https://twitter.com/tetsuworks46" target="_blank">@tetsuworks46</a></li>
+        <li> GitHub：<a href="https://github.com/vale46tetsu" target="_blank">vale46tetsu</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- ================= フッター ================= -->
+  <footer>
+    © 2025&nbsp;TetsuWorks&nbsp;|&nbsp;All Rights Reserved
+  </footer>
+
+
+
+  <!-- 外部 JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
