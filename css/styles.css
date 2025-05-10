@@ -177,8 +177,18 @@ footer {
 .hero { 
   color: #ffc107; 
   display: inline-flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap;  /* PCでは1行固定 */
   font-size: 3.5rem; /* ここで文字サイズを小さく指定 */
+}
+
+/* スマホ用メディアクエリで上書き */
+@media (max-width: 768px) {
+  .hero {
+    flex-wrap: wrap; /* アイテムの折り返しを許可 */
+  }
+  .hero-part {
+    display: block; /* 各パートをブロック表示にして改行 */
+  }
 }
 
 /* Experience（#timeline）の配置調整 */
@@ -374,3 +384,4 @@ footer {
     white-space: normal; /* 自動改行を許可 */
   }
 }
+
