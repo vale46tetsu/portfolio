@@ -378,9 +378,3 @@ footer {
 .hero-part {
   display: inline; /* PC：連続表示 */
 }
-
-@media (max-width: 768px) {
-  .hero-part {
-    display: block; /* スマホ：1行ずつ表示 */
-  }
-}
