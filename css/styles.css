@@ -2,7 +2,7 @@
    01  変数定義
    ========================================================= */
 :root {
-  --primary: #00ff;
+  --primary: #05f;
   --accent : #ffffff;
   --bg     : #f5f7fb;
   --dark   : #1d1d1d;
@@ -164,7 +164,7 @@ footer {
     flex-direction: column; /* カードを縦並びに */
     align-items: center;    /* カードをセンターに配置 */
   }
-  .hero-blue {
+  .hero {
     white-space: normal; /* 自動改行を許可 */
   }
 }
@@ -174,9 +174,11 @@ footer {
    ========================================================= */
 
 /* Hero セクションのテキストカラー */
-.hero-blue { 
-  color: #00f;
-  white-space: nowrap;
+.hero { 
+  color: #ffc107; 
+  display: inline-flex;
+  flex-wrap: nowrap;
+  font-size: 3.5rem; /* ここで文字サイズを小さく指定 */
 }
 
 /* Experience（#timeline）の配置調整 */
@@ -342,11 +344,6 @@ footer {
   }
 }
 
-/* ② styles.css ― 末尾に追記 */
-.hero-blue {
-  color: #00f; /* 濃いめで映えるブルー */
-}
-
 /* ─── 追記：Experience（#timeline）を
           ─ スマホでは「文字→画像」の縦並びにする ───────── */
 @media (max-width: 768px) {
@@ -373,7 +370,7 @@ footer {
     right: 1rem;
     z-index: 1000;
   }
-  .hero-blue {
+  .hero {
     white-space: normal; /* 自動改行を許可 */
   }
 }
