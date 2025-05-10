@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+  // 初期状態：×ボタンを非表示にする
+  const closeMenu = document.getElementById('close-menu');
+  closeMenu.style.display = 'none';
+});
+
 // ハンバーガーメニュー制御
 const burger = document.getElementById('burger');
 const navMenu = document.getElementById('nav-menu');
