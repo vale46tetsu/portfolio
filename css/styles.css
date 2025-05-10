@@ -374,7 +374,3 @@ footer {
     white-space: normal; /* 自動改行を許可 */
   }
 }
-
-.hero-part {
-  display: inline; /* PC：連続表示 */
-}
