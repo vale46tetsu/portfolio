@@ -164,6 +164,9 @@ footer {
     flex-direction: column; /* カードを縦並びに */
     align-items: center;    /* カードをセンターに配置 */
   }
+  .hero-blue {
+    white-space: normal; /* 自動改行を許可 */
+  }
 }
 
 /* =========================================================
@@ -369,5 +372,8 @@ footer {
     top: 1rem;
     right: 1rem;
     z-index: 1000;
+  }
+  .hero-blue {
+    white-space: normal; /* 自動改行を許可 */
   }
 }
