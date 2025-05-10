@@ -159,6 +159,11 @@ footer {
   .burger { display: block; }
   nav ul { display: none; flex-direction: column; }
   nav ul.open { display: flex; }
+  .skill-grid {
+    display: flex;
+    flex-direction: column; /* カードを縦並びに */
+    align-items: center;    /* カードをセンターに配置 */
+  }
 }
 
 /* =========================================================
@@ -181,10 +186,10 @@ footer {
   #timeline.two-col > div { margin: 0; }
 }
 
-/* About / Experience / Projects の画像サイズ調整 */
+/* About / Experience / Works の画像サイズ調整 */
 #about.two-col img,
 #timeline.two-col img,
-#projects.two-col img {
+#works.two-col img {
   max-width: 100%;
   height: auto;
   flex: 0 0 100%;
@@ -200,15 +205,15 @@ footer {
 #services .skill-grid {
   grid-template-columns: repeat(2, 1fr);
   max-width: 100%;          /* ← これで左右いっぱいに */
-  padding-inline: 3vw;      /* ← 画面端から少し余白を取る */
-  gap: 5rem;                /* ← カード同士の間隔も広めに（好みで調整）*/
+  padding-inline: 1vw;      /* ← 画面端から少し余白を取る */
+  gap: 3rem;                /* ← カード同士の間隔も広めに（好みで調整）*/
 }
 
 /* 2. カードの横幅をセルいっぱいに＆中央寄せ ---------- */
 #skills .skill-grid .card,
 #services .skill-grid .card {
   grid-template-columns: repeat(2, 1fr);
-  width: 120%;              /* ← セル幅と一致させる */
+  width: 100%;              /* ← セル幅と一致させる */
   max-width: none;          /* 念のため制限を解除 */
   margin: 0 auto;
 }
@@ -301,13 +306,13 @@ footer {
 #contact ul li { margin-bottom: .65rem; }
 
 /* =========================================================
-   ▼ About / Experience / Projects の画像サイズ調整
+   ▼ About / Experience / Works の画像サイズ調整
    ========================================================= */
 
 /* 共通クラス two-col 内の img を縮小 */
 #about.two-col img,
 #timeline.two-col img,
-#projects.two-col img {
+#works.two-col img {
   max-width: 100%;      /* ← 画像横幅を本文の約 40% に */
   height: auto;
   flex: 0 0 100%;       /* フレックス比も合わせる */
@@ -316,15 +321,15 @@ footer {
 /* テキスト側を広げて読みやすく */
 #about.two-col > div:not(:has(img)),
 #timeline.two-col > div:not(:has(img)),
-#projects.two-col > div:not(:has(img)) {
-  flex: 1 1 70%;
+#works.two-col > div:not(:has(img)) {
+  flex: 1 1 75%;
 }
 
 /* モバイル（～768px）は 1 列で表示を崩さない */
 @media (max-width: 768px) {
   #about.two-col img,
   #timeline.two-col img,
-  #projects.two-col img {
+  #works.two-col img {
     max-width: 100%;
     flex: 0 0 100%;
     margin-bottom: var(--spacer);
