@@ -385,3 +385,46 @@ footer {
   }
 }
 
+/* Works セクション用 */
+.works-section {
+  padding: calc(var(--spacer) * 3) var(--spacer);
+  background: var(--light);
+}
+.works-grid {
+  display: grid;
+  gap: var(--spacer);
+  grid-template-columns: repeat(3, 1fr);  /* 常に 3 列表示 */
+  justify-items: center;   /* グリッド内の各アイテムを中央に配置 */
+  margin: 0 auto;          /* グリッド自体を中央に配置 */
+}
+.work-item {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+.work-item:hover {
+  transform: translateY(-4px);
+}
+.work-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.work-item h3 {
+  text-align: center;
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+}
+.works-section h2 {
+  text-align: center;
+  font-size: 2.5rem; /* 他の見出しと同じ大きさに調整（必要に応じて変更してください） */
+}
+.works-section .overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
