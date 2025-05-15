@@ -428,3 +428,11 @@ footer {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .works-grid {
+    grid-template-columns: 1fr;  /* 縦並び（1列表示）に変更 */
+    gap: var(--spacer);
+    justify-items: center;
+    margin: 0 auto;
+  }
+}
